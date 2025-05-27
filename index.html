@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li class="brand-name">Barbie's makeup world</li>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#tutorial">Tutorial</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="intro">
+    <h1>Glow Up with Me</h1>
+    <p class="tagline">"Glow Gently, Shine Truly"</p>
+    <p>Welcome! I'm Barbie, and this is a space for exploring beauty in all its forms.</p>
+    <img src="attached_assets/image_1745715288839.png" alt="Makeup products collection" class="intro-image">
+  </section>
+
+  <section id="portfolio">
+    <h2>Makeup Gallery</h2>
+    <p class="gallery-instruction">Click below items to view makeup photos</p>
+    <div class="portfolio-grid">
+      <div class="portfolio-item" onclick="toggleImage(this)">
+        <img src="attached_assets/LINE_ALBUM_美妝YouTuber 💄_250427_2.jpg" alt="Daily makeup routine" class="portfolio-image hidden">
+        <h4>Natural School Makeup</h4>
+        <p class="look-description">This is a light and natural look, perfect for school or everyday wear. It enhances my features subtly without looking too heavy, giving a clean and fresh impression.</p>
+      </div>
+      <div class="portfolio-item" onclick="toggleImage(this)">
+        <img src="attached_assets/芝麻燕麥妝.jpg" alt="Warm tone daily makeup" class="portfolio-image hidden">
+        <h4>Warm Tone Daily Makeup</h4>
+        <p class="look-description">This daily makeup uses warm tones like coral and brown to create a soft and cozy vibe. It's suitable for casual outings or a relaxed date.</p>
+      </div>
+      <div class="portfolio-item" onclick="toggleImage(this)">
+        <img src="attached_assets/小成表演妝.jpg" alt="Performance makeup" class="portfolio-image hidden">
+        <h4>Performance Glam</h4>
+        <p class="look-description">This look is designed for stage performances. The makeup is more dramatic with bolder blush and shimmer to stand out under the lights and match a fun, energetic style.</p>
+      </div>
+      <div class="portfolio-item" onclick="toggleImage(this)">
+        <img src="attached_assets/flower_makeup.jpg" alt="Artistic makeup design" class="portfolio-image hidden">
+        <h4>Artistic Designs</h4>
+        <p class="look-description">This is where I got creative. I added playful elements like rhinestones and colored blush to show a more artistic and fantasy-inspired side of makeup.</p>
+      </div>
+      <div class="portfolio-item" onclick="toggleImage(this)">
+        <img src="attached_assets/煙燻妝.jpg" alt="Smokey eye makeup" class="portfolio-image hidden">
+        <h4>Smokey Eye Makeup</h4>
+        <p class="look-description">This look focuses on creating depth and intensity around the eyes. It's more mature and edgy, perfect for a night out or a bold fashion look.</p>
+      </div>
+      <div class="portfolio-item" onclick="toggleImage(this)">
+        <img src="attached_assets/萬聖節妝容.jpg" alt="Halloween themed makeup" class="portfolio-image hidden">
+        <h4>Halloween Theme Makeup</h4>
+        <p class="look-description">This Halloween makeup uses pale skin, deep red lips, and dark eye details to create a slightly spooky, doll-like effect. It's dramatic and fun, perfect for themed events.</p>
+      </div>
+    </div>
+    
+    <div class="video-section">
+      <h3>Makeup Tutorial</h3>
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VxBk86dWSI0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="products-list">
+        <h3>Products Used</h3>
+        <ul>
+          <li>Primer: Za 03pink</li>
+          <li>Cushion Foundation: Clio 2-BP</li>
+          <li>Loose Powder: Canmake</li>
+          <li>Lip Balm: Menthulatum</li>
+          <li>Eyebrow Powder: Kate EX-4</li>
+          <li>Eyebrow Pencil: lilybyred 04 dark brown</li>
+          <li>Eyeshadow Palette: Dasique #16 Violet Knit</li>
+          <li>Eyelash Curler: Muji</li>
+          <li>Mascara Base: Maybelline</li>
+          <li>Eyeliner: lilybyred 02 brown</li>
+          <li>Blush: 3ce #delectable</li>
+          <li>Contour: heme 00 fair contour</li>
+          <li>Lipstick: I'm meme 02</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="tutorial" class="tutorial-section">
+      <h3>💄 Natural School Makeup</h3>
+      <p>Best for: Students, beginners, and anyone who loves a fresh, natural makeup look.</p>
+
+      <div class="step">
+        <h4>🌼 Step-by-Step Tutorial</h4>
+        
+        <h5>🔹 Primer</h5>
+        <p>Use Za 03 Pink Tone-Up Cream to brighten your skin tone and give a healthy, radiant base.</p>
+
+        <h5>🔹 Base Makeup</h5>
+        <ul>
+          <li>Apply Clio Cushion Foundation (2-BP) evenly across your face.</li>
+          <li>Set with Canmake Pressed Powder for a smooth, non-sticky finish.</li>
+        </ul>
+
+        <h5>🔹 Lip Care</h5>
+        <p>Prep your lips with Mentholatum Lip Balm for moisture and a better lipstick hold.</p>
+
+        <h5>🔹 Eyebrows</h5>
+        <ul>
+          <li>Fill in sparse areas with Kate Eyebrow Powder EX-4</li>
+          <li>Define natural shape using lilybyred Eyebrow Pencil (04 Dark Brown)</li>
+        </ul>
+
+        <h5>🔹 Eye Makeup</h5>
+        <ul>
+          <li>Apply a base using the Dasique Eyeshadow Palette, and deepen the outer corners.</li>
+          <li>Tightline with lilybyred Eyeliner (02 Brown) for a subtle eye definition.</li>
+          <li>Curl lashes using Muji Eyelash Curler</li>
+          <li>Fix the curl with Maybelline Mascara Primer</li>
+        </ul>
+
+        <h5>🔹 Blush & Contour</h5>
+        <ul>
+          <li>Use 3CE Blush (#Delectable) on your cheeks in an upward diagonal motion.</li>
+          <li>Contour the cheekbones and nose sides lightly with heme Contour Powder (00)</li>
+        </ul>
+
+        <h5>🔹 Lip Makeup</h5>
+        <p>Finish with I'm Meme Lipstick (02) for a soft, natural lip color.</p>
+      </div>
+
+      <div class="pro-tips">
+        <h4>🎀 Pro Tips</h4>
+        <ul>
+          <li>Keep the base makeup light and breathable—avoid too much layering.</li>
+          <li>Blush should be applied upward along the apples of the cheeks for a fresh and lifted look.</li>
+          <li>For extra oil control, use a cotton swab with pressed powder on the T-zone.</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div id="about" class="about-section">
+      <h2>My Beauty Journey - From Stage Lights to Daily Glow</h2>
+      <p>My serious journey into makeup began when I joined the dance club in college. Every time we had a performance, I had to rely on others to help me with my stage makeup. But before shows, everyone was busy preparing themselves, and I didn't want to keep bothering others. I also feared that if no one had time to help, I would have to go on stage feeling insecure and unprepared. That fear motivated me to start learning makeup seriously — from everyday looks to special performance styles.</p>
+      <p>I taught myself by watching countless tutorials online, practicing every day. At first, it was frustrating: my makeup never looked quite right, and something always felt off. But little by little, with daily practice and adjustments, I got closer to the looks I envisioned.</p>
+      <p>Now, my friends often compliment my makeup skills, and many even ask me for tips. I'm especially inspired by Korean beauty trends — I love referencing Korean brands and girl group stage makeup for ideas. More than just a skill, makeup has become a joyful part of my daily life. Depending on my mood or outfit, I enjoy creating different looks to express myself.</p>
+      <p>Through makeup, I've found confidence, creativity, and a hobby that I truly love. One day, I hope to make it not just a passion, but something I'm truly exceptional at.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Let's Connect</h2>
+    <div class="contact-info">
+      <p>Follow my beauty journey:</p>
+      <p>Email: barbiehsu0721@gmail.com</p>
+      <p>Instagram: barbie_hsu777</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

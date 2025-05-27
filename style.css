@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+nav {
+  background: #ff69b4;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+.brand-name {
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.2em;
+  margin-right: 2rem;
+  padding-left: 1rem;
+}
+
+nav ul li a {
+
+.about-section {
+  margin-top: 24rem;
+  padding: 2rem;
+  background: transparent;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  min-height: 100vh;
+  padding: 6rem 2rem 2rem;
+}
+
+#intro {
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.tagline {
+  font-style: italic;
+  color: #ff69b4;
+  margin: 1rem 0;
+  font-size: 1.2em;
+}
+
+.intro-image {
+  max-width: 400px;
+  width: 80%;
+  margin: 2rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: block;
+}
+
+#about {
+  background: #fff;
+}
+
+#portfolio {
+  background: #f4f4f4;
+}
+
+.gallery-instruction {
+  text-align: center;
+  color: #666;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.portfolio-item {
+  background: #fff;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  width: 350px;
+  margin: 0 auto;
+}
+
+.portfolio-item h4 {
+  margin: 1rem 0 0.5rem;
+  color: #ff69b4;
+}
+
+.look-description {
+  font-size: 1.1em;
+  color: #666;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  margin: 0 auto 1rem;
+  display: block;
+  transition: all 0.3s ease;
+  aspect-ratio: 1/1;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 4rem 1rem 1rem;
+  }
+  
+  .portfolio-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1rem;
+  }
+  
+  .video-container {
+    margin: 1rem auto;
+  }
+  
+  .products-list {
+    margin-top: 2rem;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+  
+  .intro-image {
+    width: 95%;
+  }
+}
+
+.video-section {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tutorial-section {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tutorial-section h3 {
+  color: #ff69b4;
+  margin-bottom: 1rem;
+}
+
+.tutorial-section .step {
+  margin: 1.5rem 0;
+}
+
+.tutorial-section .pro-tips {
+  background: #f8f8f8;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-top: 2rem;
+}
+
+.tutorial-section ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.tutorial-section li {
+  margin: 0.5rem 0;
+}
+
+.products-list {
+  margin-top: 4rem;
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.products-list ul {
+  list-style: none;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.products-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.products-list li:last-child {
+  border-bottom: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.portfolio-item {
+  cursor: pointer;
+}
+
+.portfolio-item:hover {
+  background: #f8f8f8;
+}
+
+#contact {
+  background: #fff;
+  text-align: center;
+}
+
+.contact-info {
+  margin-top: 2rem;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
+}
